@@ -516,8 +516,8 @@ function render(){
   /* --- Jadual --- */
   const rows = buildRows(btc, target, fx, currentYear);
   const head = mode === 'rm'
-    ? '<tr><th>Tahun halving</th><th>Ganjaran / blok</th><th>Harga Sebenar Masa Halving (USD)</th><th>Miner Dapat / Blok Masa Tu (USD)</th><th>Harga Sasaran Miner Dapat (RM)</th><th>Harga Sasaran Miner Dapat (USD)</th><th>Nilai BTC Anda (RM)</th><th>Status</th></tr>'
-    : '<tr><th>Tahun halving</th><th>Ganjaran / blok</th><th>Harga Sebenar Masa Halving (USD)</th><th>Miner Dapat / Blok Masa Tu (USD)</th><th>Harga Sasaran Miner Dapat (RM)</th><th>Harga Sasaran Miner Dapat (USD)</th><th>Unit BTC Anda</th><th>Nilai Portfolio (RM)</th><th>Nilai Portfolio (USD)</th><th>Status</th></tr>';
+    ? '<tr><th>Tahun halving</th><th>Ganjaran / blok</th><th>Harga Sebenar Masa Halving (USD)</th><th>Miner Dapat / Blok Masa Tu (USD)</th><th>Harga Sasaran 1 BTC (RM)</th><th>Harga Sasaran 1 BTC (USD)</th><th>Nilai BTC Anda (RM)</th><th>Status</th></tr>'
+    : '<tr><th>Tahun halving</th><th>Ganjaran / blok</th><th>Harga Sebenar Masa Halving (USD)</th><th>Miner Dapat / Blok Masa Tu (USD)</th><th>Harga Sasaran 1 BTC (RM)</th><th>Harga Sasaran 1 BTC (USD)</th><th>Unit BTC Anda</th><th>Nilai Portfolio (RM)</th><th>Nilai Portfolio (USD)</th><th>Status</th></tr>';
   $('tableHead').innerHTML = head;
 
   $('halvingRows').innerHTML = rows.map(r => {
